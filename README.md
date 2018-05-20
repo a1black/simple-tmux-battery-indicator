@@ -11,7 +11,7 @@ Plugin currently only implements interface for *upower* command-line tool (it's 
 ### Manual installation
 1. Clone plugin: 
 
-git clone https://github/a1black/simple-tmux-battery-indicator ~/clone/path
+   $ git clone https://github/a1black/simple-tmux-battery-indicator ~/clone/path
 
 2. Add plugin to the bottom of `~/.tmux.conf` with `run-shell ~/clone/path/simple_battery.tmux`
 
@@ -21,7 +21,7 @@ Add following format strings to tmux status line:
 - `#{battery_status_bg}` - will set background color based on battery remain energy
 - `#{battery_percentage}` - will show battery remain energy
 
-###Example
+### Example
 Add format string to status-right:
 
     # ~/.tmux.conf
@@ -33,4 +33,4 @@ If battery is not charging this results in output ({remain energy} {remain time}
 
 If battery is charging:
 
-    ⚡️60% | a1black
+    ⚡️ 60% | a1black
